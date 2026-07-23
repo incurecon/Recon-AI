@@ -1,0 +1,6 @@
+{
+  "name": "IncuRecon AI",
+  "description": "AI-Driven Financial Reconciliation Platform with Fraud Detection, Discrepancy Analysis, and Multi-Sheet Excel Audit Reports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
