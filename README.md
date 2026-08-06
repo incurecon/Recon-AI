@@ -1,10 +1,4 @@
 # IncuRecon AI
-### AI-Powered Financial Reconciliation & Forensic Audit Platform
-
-> **Automating Financial Reconciliation. Explaining Exceptions. Building Trust with AI.**
-
-IncuRecon AI is an AI-powered financial intelligence platform, built during the **AI NOW Bootcamp Hackathon**, that reconciles transactions across bank statements, general ledgers, and supporting financial documents — then uses generative AI to explain *why* each exception happened, not just that it happened.
-
 <div align="center">
 
 <img src="assets/incurecon-homepage.png"
@@ -12,6 +6,13 @@ alt="IncuRecon AI Homepage"
 width="1000"/>
 
 </div>
+
+### AI-Powered Financial Reconciliation & Forensic Audit Platform
+
+> **Automating Financial Reconciliation. Explaining Exceptions. Building Trust with AI.**
+
+IncuRecon AI is an AI-powered financial intelligence platform, built during the **AI NOW Bootcamp Hackathon**, that reconciles transactions across bank statements, general ledgers, and supporting financial documents — then uses generative AI to explain *why* each exception happened, not just that it happened.
+
 
 🔗 **Live demo:** [incurecon-ai.ai.studio](https://incurecon-ai.ai.studio/)
 
