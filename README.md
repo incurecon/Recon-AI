@@ -145,7 +145,7 @@ The AI pipeline combines deterministic finance logic with generative AI:
            Retrieval-Augmented Generation
                         │
                         ▼
-                Gemini 3.6 Flash
+                Google Gemini
                         │
                         ▼
     Explainable AI + Audit Report Generation
@@ -159,7 +159,7 @@ The AI pipeline combines deterministic finance logic with generative AI:
 
 **Backend:** FastAPI, Python
 
-**AI:** Gemini 3.6 Flash, Retrieval-Augmented Generation (RAG), Sentence Transformers, Semantic Search
+**AI:** Google Gemini, Retrieval-Augmented Generation (RAG), Sentence Transformers, Semantic Search
 
 **Data Processing:** Pandas, NumPy, PDF processing, Excel processing
 
@@ -240,7 +240,7 @@ Special thanks to Incubator Hub, the Dare Adeboye Foundation, our mentors, and t
 
 ## Contact
 
-Interested in a pilot, a technical deep-dive, or discussing investment? Reach out via incurecon@gmail.com or try the live demo at [incurecon-ai.ai.studio](https://incurecon-ai.ai.studio/).
+Interested in a pilot, a technical deep-dive, or discussing investment? Reach out via [state preferred contact method — email / calendar link] or try the live demo at [incurecon-ai.ai.studio](https://incurecon-ai.ai.studio/).
 
 ---
 
