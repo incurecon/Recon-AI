@@ -91,7 +91,7 @@ Detects:
 
 ## 🤖 AI Financial Assistant
 
-Powered by **Google Gemini**
+Powered by **Gemini 3.6 Flash**
 
 The AI Assistant can:
 
@@ -309,7 +309,7 @@ Special thanks to:
 
 - Incubator Hub
 - Dare Adeboye Foundation
-- Our mentors
+- Mr. Bashirudeen Opeyemi Ms. Adejumobi Joshua
 - The AI NOW Bootcamp organizers
 
 ---
