@@ -8,7 +8,7 @@ width="1000"/>
 </div>
 
 ### AI-Powered Financial Reconciliation & Forensic Audit Platform
-
+]
 > **Automating Financial Reconciliation. Explaining Exceptions. Building Trust with AI.**
 > ## 🌐 Live Demo: https://incurecon-ai.ai.studio/
 
@@ -309,7 +309,7 @@ Special thanks to:
 
 - Incubator Hub
 - Dare Adeboye Foundation
-- Mr. Bashirudeen Opeyemi and Ms. Adejumobi Joshua
+- Our Mentors (Mr. Bashirudeen Opeyemi and Ms. Adejumobi Joshua)
 - The AI NOW Bootcamp organizers
 
 ---
