@@ -5,7 +5,13 @@
 
 IncuRecon AI is an AI-powered financial intelligence platform, built during the **AI NOW Bootcamp Hackathon**, that reconciles transactions across bank statements, general ledgers, and supporting financial documents — then uses generative AI to explain *why* each exception happened, not just that it happened.
 
-![IncuRecon AI — AI-Driven Financial Reconciliation & Fraud Radar](./assets/incurecon-app-screenshot.jpg)
+<div align="center">
+
+<img src="assets/incurecon-homepage.png"
+alt="IncuRecon AI Homepage"
+width="1000"/>
+
+</div>
 
 🔗 **Live demo:** [incurecon-ai.ai.studio](https://incurecon-ai.ai.studio/)
 
