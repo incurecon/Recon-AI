@@ -145,7 +145,7 @@ The AI pipeline combines deterministic finance logic with generative AI:
            Retrieval-Augmented Generation
                         │
                         ▼
-                Google Gemini
+                Gemini 3.6 Flash
                         │
                         ▼
     Explainable AI + Audit Report Generation
@@ -159,7 +159,7 @@ The AI pipeline combines deterministic finance logic with generative AI:
 
 **Backend:** FastAPI, Python
 
-**AI:** Google Gemini, Retrieval-Augmented Generation (RAG), Sentence Transformers, Semantic Search
+**AI:** Gemini 3.6 Flash, Retrieval-Augmented Generation (RAG), Sentence Transformers, Semantic Search
 
 **Data Processing:** Pandas, NumPy, PDF processing, Excel processing
 
