@@ -309,7 +309,7 @@ Special thanks to:
 
 - Incubator Hub
 - Dare Adeboye Foundation
-- Mr. Bashirudeen Opeyemi Ms. Adejumobi Joshua
+- Mr. Bashirudeen Opeyemi and Ms. Adejumobi Joshua
 - The AI NOW Bootcamp organizers
 
 ---
