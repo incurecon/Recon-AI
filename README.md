@@ -1,117 +1,128 @@
-*README*
-
-# 🚀 IncuRecon AI
+# IncuRecon AI
 ### AI-Powered Financial Reconciliation & Forensic Audit Platform
 
 > **Automating Financial Reconciliation. Explaining Exceptions. Building Trust with AI.**
 
----
+IncuRecon AI is an AI-powered financial intelligence platform, built during the **AI NOW Bootcamp Hackathon**, that reconciles transactions across bank statements, general ledgers, and supporting financial documents — then uses generative AI to explain *why* each exception happened, not just that it happened.
 
-## 📖 Overview
+![IncuRecon AI — AI-Driven Financial Reconciliation & Fraud Radar](./assets/incurecon-app-screenshot.jpg)
 
-**IncuRecon AI** is an AI-powered Financial Intelligence Platform built during the **AI NOW Bootcamp Hackathon** to address one of the most time-consuming challenges in finance:
-
-> **Reconciling financial transactions across multiple sources while providing explainable audit insights.**
-
-Instead of spending hours manually comparing **bank statements**, **general ledgers**, and supporting financial documents, IncuRecon AI automates the reconciliation process, identifies mismatches, detects suspicious anomalies, and generates audit-ready reports within minutes.
-
-The platform combines **deterministic financial reconciliation** with **Generative AI** to help finance teams understand not only **what** failed to reconcile, but **why**.
+🔗 **Live demo:** [incurecon-ai.ai.studio](https://incurecon-ai.ai.studio/)
 
 ---
 
-## 💡 The Problem
+## Table of Contents
 
-Finance teams spend significant time every month:
-
-- Comparing bank statements with internal ledgers
-- Investigating unmatched transactions
-- Identifying duplicate or suspicious transactions
-- Preparing reconciliation reports for auditors
-- Maintaining compliance documentation
-
-Traditional reconciliation tools often highlight discrepancies but leave finance professionals to manually investigate the causes.
-
----
-
-## ✅ Our Solution
-
-IncuRecon AI acts as an intelligent financial copilot that:
-
-- Automatically reconciles financial transactions
-- Detects exceptions and anomalies
-- Explains reconciliation failures using AI
-- Generates audit-ready reconciliation reports
-- Assists auditors through an AI-powered financial assistant
+- [The Opportunity](#the-opportunity)
+- [Why Not Excel?](#why-not-excel)
+- [Why Not QuickBooks, Xero, or Sage?](#why-not-quickbooks-xero-or-sage)
+- [Investor FAQ: Security, Safety & Accuracy](#investor-faq-security-safety--accuracy)
+- [Key Features](#key-features)
+- [AI Architecture](#ai-architecture)
+- [Tech Stack](#tech-stack)
+- [Target Users](#target-users)
+- [Responsible AI](#responsible-ai)
+- [Status & Roadmap](#status--roadmap)
+- [Getting Started (Technical)](#getting-started-technical)
+- [Team](#team)
+- [Contact](#contact)
 
 ---
 
-# ✨ Key Features
+## The Opportunity
 
-## 📂 Financial Document Upload
+Every month, finance teams lose real time to a workflow that hasn't changed in decades:
 
-Supports:
+- Comparing bank statements against internal ledgers, line by line
+- Manually investigating every unmatched transaction
+- Trying to spot duplicate or suspicious entries by eye
+- Assembling reconciliation reports for auditors from scratch
+- Maintaining compliance documentation on top of all of it
 
-- PDF Bank Statements
-- CSV Files
-- Excel Ledgers (.xlsx)
-- Supporting Financial Documents
-
----
-
-## 🔄 Intelligent Reconciliation
-
-Automatically matches transactions using:
-
-- Amount Matching
-- Date Matching
-- Reference Matching
-- Description Matching
-- Rule-based Financial Logic
+Traditional reconciliation tools stop at *flagging* a discrepancy — they leave the finance professional to manually investigate the cause. IncuRecon AI goes further: it reconciles automatically, flags exceptions, and then **explains** them in plain language, backed by the underlying transaction evidence.
 
 ---
 
-## 🚨 Fraud & Risk Detection
+## Why Not Excel?
 
-Detects:
+Excel is the incumbent because it's free, flexible, and universal — not because it's good at this specific job. Reconciliation in Excel is manual formula-matching, re-verified by a human, every cycle, for every file.
 
-- Duplicate Transactions
-- Missing Entries
-- Suspicious Transactions
-- High Risk Patterns
-- Potential Financial Anomalies
+| | Excel / Spreadsheets | IncuRecon AI |
+|---|---|---|
+| Matching logic | Manual formulas, exact-text lookups | Automated matching across amount, date, reference, and description, using rule-based financial logic |
+| Exception handling | Reviewer has to notice and investigate manually | Automatically flags duplicates, missing entries, suspicious transactions, and high-risk patterns |
+| Explanation of exceptions | None | AI-generated, evidence-backed explanation for *why* a transaction didn't reconcile |
+| Audit trail | Ad hoc, whatever the analyst remembers to document | Structured, audit-ready reconciliation report generated automatically |
+| Auditor support | None | Built-in AI assistant that answers auditor questions and summarizes findings |
 
----
-
-## 🤖 AI Financial Assistant
-
-Powered by **Google Gemini**
-
-The AI Assistant can:
-
-- Explain reconciliation exceptions
-- Answer auditor questions
-- Summarize financial findings
-- Generate reconciliation narratives
-- Provide evidence-backed explanations
+Excel isn't a bad tool — reconciliation was just never its job. It's a canvas, not a control system.
 
 ---
 
-## 📊 Audit-Ready Reports
+## Why Not QuickBooks, Xero, or Sage?
 
-Generate professional reports including:
+Established accounting suites are **bookkeeping systems of record** — excellent at invoicing, ledgers, payroll, and basic bank feeds. Reconciliation inside them is typically a simple transaction match against a live bank feed, not a fraud-aware, explainable, cross-document reconciliation engine. IncuRecon AI isn't trying to replace the ledger of record — it's the **specialized reconciliation and forensic audit layer** that sits on top of whatever accounting system a business already uses, and it works across PDF bank statements, CSVs, and Excel ledgers rather than requiring both sides to already live in one platform.
 
-- Reconciliation Summary
-- Matched Transactions
-- Unmatched Transactions
-- Fraud Indicators
-- AI Explanations
-- Recommendations
+Key differences:
+
+- **Explainability:** Reconciliation mismatches in most accounting software surface as a raw diff. IncuRecon AI's AI assistant explains the exception, answers follow-up questions, and generates a reconciliation narrative an auditor can actually use.
+- **Fraud-and-risk-first design:** Incumbent suites focus on categorization and bookkeeping accuracy. IncuRecon AI is built specifically to surface duplicate transactions, missing entries, suspicious activity, and high-risk patterns.
+- **Document flexibility:** Reconciles PDF bank statements, CSVs, and Excel ledgers side by side, without requiring a live bank-feed integration first.
+- **Audit-ready output by default:** Every reconciliation produces a structured report — summary, matched, unmatched, fraud indicators, AI explanations, and recommendations — rather than a raw transaction list.
 
 ---
 
-# 🧠 AI Architecture
+## Investor FAQ: Security, Safety & Accuracy
 
-Our AI pipeline combines deterministic finance logic with Generative AI.
+### What stage is this at, honestly?
+IncuRecon AI is currently an **MVP built during the AI NOW Bootcamp Hackathon** — not a production-hardened platform yet. It currently runs on local/mock storage rather than a production database, and multi-user authentication is a Phase 2 roadmap item, not a shipped feature. We'd rather be upfront about that with investors than overstate where the product is.
+
+### How does the AI work, and where does our data go?
+The AI assistant is powered by **Google Gemini**, accessed via API, combined with **Retrieval-Augmented Generation (RAG)** and **Sentence Transformers** for semantic search over transaction data. This means reconciliation explanations are grounded in your actual uploaded transaction data (not a generic model guess) — but it also means AI processing currently calls a third-party API (Google) rather than running fully on-premises. If self-hosted/local-model deployment is a requirement for a given customer (e.g. a bank or regulated institution), that's an architecture change we'd scope as part of an enterprise deployment, not something the current MVP does today.
+
+### Does it store sensitive personal information?
+The platform was designed with **no storage of sensitive personal information** as a core principle, alongside explainable AI responses, human-in-the-loop decision support, audit-friendly outputs, and transparent recommendations. That said, formal data handling policies, encryption-at-rest, and access controls appropriate for regulated finance customers are part of the production roadmap (Phase 2/3), not yet independently audited.
+
+### How accurate is the matching and fraud detection?
+Reconciliation uses deterministic rule-based logic across four dimensions — amount, date, reference, and description matching — so matches are inspectable, not a black box. Exception detection surfaces duplicate transactions, missing entries, suspicious transactions, high-risk patterns, and potential anomalies. As with any hackathon-stage MVP, we have not yet run formal precision/recall benchmarking against labeled fraud datasets — that's a near-term validation priority alongside broader pilot testing.
+
+### What happens if the AI explanation is wrong?
+Every AI output is a **human-in-the-loop decision support** tool by design — an explanation or recommendation for a person to evaluate, not an automatic ledger write. Because explanations are generated via RAG against the actual transaction data rather than the model's general knowledge, they're intended to be evidence-backed rather than guessed — but they should still be reviewed like any AI-assisted output.
+
+### Is this dependent on Google's Gemini API long-term?
+Today, yes — the AI assistant is built on Google Gemini. That's a reasonable MVP choice (fast to build, strong reasoning quality), but it does mean cost and availability are tied to Google's API pricing and uptime. Evaluating self-hosted/open-weight model alternatives would be a sensible question to revisit as the product matures past MVP stage.
+
+---
+
+## Key Features
+
+### Financial Document Upload
+- PDF bank statements
+- CSV files
+- Excel ledgers (.xlsx)
+- Supporting financial documents
+
+### Intelligent Reconciliation
+Automatically matches transactions using amount matching, date matching, reference matching, description matching, and rule-based financial logic.
+
+### Fraud & Risk Detection
+Detects duplicate transactions, missing entries, suspicious transactions, high-risk patterns, and potential financial anomalies.
+
+### AI Financial Assistant (Google Gemini)
+- Explains reconciliation exceptions
+- Answers auditor questions
+- Summarizes financial findings
+- Generates reconciliation narratives
+- Provides evidence-backed explanations
+
+### Audit-Ready Reports
+Reconciliation summary, matched transactions, unmatched transactions, fraud indicators, AI explanations, and recommendations.
+
+---
+
+## AI Architecture
+
+The AI pipeline combines deterministic finance logic with generative AI:
 
 ```text
                 Upload Documents
@@ -142,132 +153,31 @@ Our AI pipeline combines deterministic finance logic with Generative AI.
 
 ---
 
-# ⚙️ Tech Stack
+## Tech Stack
 
-## Frontend
+**Frontend:** React, TypeScript, Tailwind CSS, Vite
 
-- React
-- TypeScript
-- TailwindCSS
-- Vite
+**Backend:** FastAPI, Python
 
----
+**AI:** Google Gemini, Retrieval-Augmented Generation (RAG), Sentence Transformers, Semantic Search
 
-## Backend
+**Data Processing:** Pandas, NumPy, PDF processing, Excel processing
 
-- FastAPI
-- Python
+**Database:** Local storage / mock database (current MVP) — PostgreSQL and Redis are on the production roadmap
+
+**Deployment:** Google AI Studio, GitHub
 
 ---
 
-## AI
+## Target Users
 
-- Google Gemini
-- Retrieval-Augmented Generation (RAG)
-- Sentence Transformers
-- Semantic Search
+Finance teams, accountants, internal auditors, external auditors, compliance officers, FinTech companies, banks, insurance companies, and enterprise finance departments.
 
 ---
 
-## Data Processing
+## Responsible AI
 
-- Pandas
-- NumPy
-- PDF Processing
-- Excel Processing
-
----
-
-## Database
-
-Current MVP
-
-- Local Storage / Mock Database
-
-Production Roadmap
-
-- PostgreSQL
-- Redis
-
----
-
-## Deployment
-
-- Google AI Studio
-- GitHub
-
----
-
-# 📂 Project Structure
-
-```
-.
-├── assets/
-├── server/
-├── src/
-├── package.json
-├── server.js
-├── vite.config.ts
-└── README.md
-```
-
----
-
-# 🚀 Getting Started
-
-## Clone Repository
-
-```bash
-git clone https://github.com/incurecon/Recon-AI.git
-```
-
-## Install Dependencies
-
-```bash
-npm install
-```
-
-## Run Development Server
-
-```bash
-npm run dev
-```
-
-Application runs at:
-
-```
-http://localhost:5173
-```
-
----
-
-# 🌐 Live Demo
-
-Try the application here:
-
-https://incurecon-ai.ai.studio/
-
----
-
-# 🎯 Target Users
-
-Designed for:
-
-- Finance Teams
-- Accountants
-- Internal Auditors
-- External Auditors
-- Compliance Officers
-- FinTech Companies
-- Banks
-- Insurance Companies
-- Enterprise Finance Departments
-
----
-
-# 🔒 Responsible AI
-
-We designed IncuRecon AI with Responsible AI principles:
+IncuRecon AI was designed around Responsible AI principles:
 
 - Explainable AI responses
 - Human-in-the-loop decision support
@@ -277,53 +187,70 @@ We designed IncuRecon AI with Responsible AI principles:
 
 ---
 
-# 🚀 Roadmap
+## Status & Roadmap
 
-### Phase 1 ✅
-
+### Phase 1 ✅ (Current)
 - MVP
-- Financial Reconciliation
-- Fraud Detection
-- AI Assistant
+- Financial reconciliation
+- Fraud detection
+- AI assistant
 
 ### Phase 2
-
-- ERP Integrations (SAP, Oracle, QuickBooks)
+- ERP integrations (SAP, Oracle, QuickBooks)
 - Banking APIs
-- Multi-user Authentication
-- Cloud Database
+- Multi-user authentication
+- Cloud database
 
 ### Phase 3
-
-- Continuous Reconciliation
-- Predictive Financial Insights
-- AI Compliance Assistant
-- Enterprise Dashboard
+- Continuous reconciliation
+- Predictive financial insights
+- AI compliance assistant
+- Enterprise dashboard
 
 ---
 
-# 👥 Team
+## Getting Started (Technical)
+
+### Clone the repository
+```bash
+git clone https://github.com/incurecon/Recon-AI.git
+```
+
+### Install dependencies
+```bash
+npm install
+```
+
+### Run the development server
+```bash
+npm run dev
+```
+
+Application runs at `http://localhost:5173`.
+
+---
+
+## Team
 
 Developed during the **AI NOW Bootcamp Hackathon** by **Team FINConsult**.
 
-Special thanks to:
-
-- Incubator Hub
-- Dare Adeboye Foundation
-- Our mentors
-- The AI NOW Bootcamp organizers
+Special thanks to Incubator Hub, the Dare Adeboye Foundation, our mentors, and the AI NOW Bootcamp organizers.
 
 ---
 
-# 🤝 Contributing
+## Contact
 
-Contributions, ideas, and feature requests are welcome.
-
-Feel free to fork the project and submit pull requests.
+Interested in a pilot, a technical deep-dive, or discussing investment? Reach out via incurecon@gmail.com or try the live demo at [incurecon-ai.ai.studio](https://incurecon-ai.ai.studio/).
 
 ---
 
-# 📄 License
+## Contributing
+
+Contributions, ideas, and feature requests are welcome. Feel free to fork the project and submit pull requests.
+
+---
+
+## License
 
 This project was initially developed as a Hackathon MVP and is currently evolving into a production-ready platform.
 
